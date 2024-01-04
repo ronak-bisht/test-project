@@ -10,7 +10,8 @@ function App() {
   useEffect(()=>{
     async function get(){
       try{
-        const {data}=await axios('http://15.206.217.196:4000/all-product')
+        // const {data}=await axios('http://15.206.217.196:4000/all-product')
+        const {data}=await axios('http://localhost:7000/api/get-product')
         console.log(data)
       }catch(err){
         console.log(err.message)
